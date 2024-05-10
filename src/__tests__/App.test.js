@@ -34,6 +34,7 @@ test("checkbox appears as unchecked when user clicks a second time", () => {
   expect(addPepperoni).not.toBeChecked();
 });
 
+// size select element
 test("size select element initially displays 'Small'", () => {
   render(<App />);
 
@@ -78,6 +79,7 @@ test("selecting options updates the 'Your selection' message", () => {
   expect(screen.getByText("large pepperoni")).toBeInTheDocument();
 });
 
+// 'Contact Info' text box
 test("'Contact Info' text box initially displays a placeholder value of 'email address'", () => {
   render(<App />);
 
